@@ -1,0 +1,75 @@
+@import "../css/normalize.css";
+@import "../lib/swiper.css";
+
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  margin: 0;
+  color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.banner {
+  background-image: url(../img/banner/banner.jpg);
+  min-height: 100vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-dimming {
+  min-height: 100vh;
+  background: rgb(0, 0, 0, 0.23);
+}
+
+.container {
+  width: 100%;
+  max-width: 1270px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.banner-description p {
+  line-height: 50px;
+  font-size: 45px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.banner-description span {
+  font-size: 35px;
+  display: block;
+  text-align: end;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  --swiper-navigation-size: 35px;
+  top: 93%;
+  color: white;
+}
+
+.swiper-button-prev {
+  left: 45%;
+}
+
+.swiper-button-next {
+  right: 45%;
+}
+
+.swiper-content {
+  display: flex;
+  align-items: center;
+  padding-bottom: 70px;
+}
